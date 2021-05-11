@@ -31,4 +31,8 @@ class Rental {
         }
         return result;
     }
+
+    int getFrequentRenterPoints() {
+        return getMovie().getPriceCode() == Movie.NEW_RELEASE && getDaysRented() > 2 ? 2 : 1;
+    }
 }
