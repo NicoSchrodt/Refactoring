@@ -41,13 +41,13 @@ class Customer {
     }
 
     private int getTotalFrequentRenterPoints() {
-        double result = 0;
+        int result = 0;
         Enumeration enum_rentals = rentals.elements();
         while (enum_rentals.hasMoreElements()) {
             Rental each = (Rental) enum_rentals.nextElement();
             result += each.getFrequentRenterPoints();
         }
-        return 0;
+        return result;
     }
 
     public String htmlStatement() {

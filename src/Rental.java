@@ -13,6 +13,6 @@ class Rental {
     }
 
     public int getFrequentRenterPoints() {
-        return movie.getFrequentRenterPoints(daysRented);
+        return movie.price.getFrequentRenterPoints(daysRented);
     }
 }
